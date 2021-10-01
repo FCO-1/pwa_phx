@@ -24,7 +24,7 @@ defmodule PwaPhxWeb.Endpoint do
     at: "/",
     from: :pwa_phx,
     gzip: false,
-    only: ~w(css fonts images js favicon.ico robots.txt cache_manifest.json service-worker.js)
+    only: ~w(css fonts images js favicon.ico robots.txt cache_manifest.json service-worker.js manifest.json)
 
   # Code reloading can be explicitly enabled under the
   # :code_reloader configuration of your endpoint.

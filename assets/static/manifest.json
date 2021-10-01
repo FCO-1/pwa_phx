@@ -44,7 +44,7 @@
   
   ],
     "lang": "es",
-    "start_url": "/root.html",
+    "start_url": "/",
     "display": "standalone",
     "background_color": "white",
     "theme_color": "white"
