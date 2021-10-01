@@ -25,7 +25,8 @@ defmodule PwaPhxWeb.Endpoint do
     from: :pwa_phx,
     gzip: false,
     only: ~w(css fonts images js favicon.ico robots.txt cache_manifest.json service-worker.js manifest.json)
-
+   # En este caso no pude mantener el service-worker dentro de la carpeta js, ya que no encontraba el resto
+   # de los archivos, lo mismo con el manifest y cache-manifest,
   # Code reloading can be explicitly enabled under the
   # :code_reloader configuration of your endpoint.
   if code_reloading? do
