@@ -34,3 +34,5 @@ Vista de pwa de elixir
   + Workbox: https://developers.google.com/web/tools/workbox/guides/get-started
   + Manifest: https://blog.apiki.com/web-app-manifest/
   + Informacion sobre pwa: https://pwaexperts.io/tutoriales
+  + referencia: https://github.com/botsquad/phoenix-service-worker-example
+  + 
