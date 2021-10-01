@@ -32,3 +32,5 @@ Vista de pwa de elixir
   * Error de service worker, referencia, por si se presenta:  https://stackoverflow.com/questions/28921937/failed-to-register-a-serviceworker-serviceworker-cannot-be-started
 
   + Workbox: https://developers.google.com/web/tools/workbox/guides/get-started
+  + Manifest: https://blog.apiki.com/web-app-manifest/
+  + Informacion sobre pwa: https://pwaexperts.io/tutoriales
