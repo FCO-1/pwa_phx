@@ -1,0 +1,51 @@
+
+{
+    "name": "PwaPhx",
+    "short_name": "PwaPhx",
+    "icons": [{
+    "src": "/images/icons8-v-live-50.png",
+      "sizes": "50x50",
+      "type": "image/png"
+    },
+  {
+    "src": "/images/icons8-v-live-100.png",
+      "sizes": "100x100",
+      "type": "image/png"
+  },
+  {
+    "src": "/images/icons8-v-live-150.png",
+      "sizes": "150x150",
+      "type": "image/png"
+  },
+  {
+    "src": "/images/icons8-v-live-250.png",
+      "sizes": "250x250",
+      "type": "image/png"
+  },
+  {
+    "src": "/images/icons8-v-live-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+  },
+  {
+    "src": "/images/icons8-v-live-114.png",
+      "sizes": "512x512",
+      "type": "image/png"
+  },
+  {
+    "src": "/images/icons8-v-live-480.png",
+      "sizes": "512x512",
+      "type": "image/png"
+  },{
+    "src": "/images/icons8-v-live-512_azul.png",
+      "sizes": "512x512",
+      "type": "image/png"
+  }
+  
+  ],
+    "lang": "es",
+    "start_url": "/root.html",
+    "display": "standalone",
+    "background_color": "white",
+    "theme_color": "white"
+  }
