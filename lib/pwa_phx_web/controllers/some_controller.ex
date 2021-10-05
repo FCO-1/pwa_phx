@@ -1,10 +1,10 @@
 defmodule PwaPhxWeb.SomeController do
   use PwaPhxWeb, :controller
 
-  def service_worker(conn, _) do
+  def sw(conn, _) do
     conn
     |> put_resp_content_type("application/javascript")
-    |> render("service_worker.js")
+    |> render("sw.js")
   end
 
 end

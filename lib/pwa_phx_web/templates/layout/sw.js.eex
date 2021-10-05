@@ -1,4 +1,4 @@
-  caches.open("pre-cache:v1").then(cache => cache.addAll([                                                                                                                  
+  caches.open("cache:static:").then(cache => cache.addAll([                                                                                                                  
     "<%= Routes.static_path(@conn, "/css/app.css") %>",                                                                                            
     "<%= Routes.static_path(@conn, "/main.js") %>",
     "<%= Routes.static_path(@conn, "/images/icons8-v-live-144.png")%>",

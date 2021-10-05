@@ -16,6 +16,7 @@ defmodule PwaPhxWeb.Router do
 
   scope "/", PwaPhxWeb do
     pipe_through :browser
+    get "/sw", SomeController, :sw
 
     live "/", PageLive, :index
   end
