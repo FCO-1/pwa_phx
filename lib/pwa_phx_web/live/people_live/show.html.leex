@@ -1,0 +1,27 @@
+<h1>Show People</h1>
+
+<%= if @live_action in [:edit] do %>
+  <%= live_modal @socket, PwaPhxWeb.PeopleLive.FormComponent,
+    id: @people.id,
+    title: @page_title,
+    action: @live_action,
+    people: @people,
+    return_to: Routes.people_show_path(@socket, :show, @people) %>
+<% end %>
+
+<ul>
+
+  <li>
+    <strong>Name:</strong>
+    <%= @people.name %>
+  </li>
+
+  <li>
+    <strong>Age:</strong>
+    <%= @people.age %>
+  </li>
+
+</ul>
+
+<span><%= live_patch "Edit", to: Routes.people_show_path(@socket, :edit, @people), class: "button" %></span>
+<span><%= live_redirect "Back", to: Routes.people_index_path(@socket, :index) %></span>
