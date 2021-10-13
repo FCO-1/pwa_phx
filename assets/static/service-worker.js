@@ -17,18 +17,28 @@ self.addEventListener('install', function(e) {
       })
   );
 });
-self.addEventListener('fetch', function (event) {
-  event.respondWith(
-    caches.open('cache:static:').then(function (cache) {
-      return cache.match(event.request).then(function (response) {
-        return (
-          response ||
-          fetch(event.request).then(function (response) {
-            cache.put(event.request, response.clone());
-            return response;
-          })
-        );
-      });
-    }),
-  );
+//self.addEventListener('fetch', function (event) {
+//  event.respondWith(
+//    caches.open('cache:static:').then(function (cache) {
+//      return cache.match(event.request).then(function (response) {
+//        return (
+//          response ||
+//          fetch(event.request).then(function (response) {
+//            cache.put(event.request, response.clone());
+//            return response;
+//          })
+//        );
+//      });
+//    }),
+//  );
+//});
+
+self.addEventListener('fetch', (event) => {
+  event.respondWith(async function() {
+    try {
+      return await fetch(event.request);
+    } catch (err) {
+      return caches.match(event.request);
+    }
+  }());
 });
