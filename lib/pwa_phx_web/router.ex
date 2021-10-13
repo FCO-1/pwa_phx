@@ -19,6 +19,7 @@ defmodule PwaPhxWeb.Router do
     get "/sw", SomeController, :sw
 
     live "/", PageLive, :index
+    live "/local", LocalLive.Index, :index
   end
 
   # Other scopes may use custom stacks.
