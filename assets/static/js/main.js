@@ -11,7 +11,6 @@ window.onload = () => {
 
 function updateIndicator() {
     console.log(window.navigator.onLine);
-    alert("Hola");
   }
   window.addEventListener('online',  updateIndicator);
   window.addEventListener('offline', updateIndicator);
