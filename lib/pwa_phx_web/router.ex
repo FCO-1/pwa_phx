@@ -20,6 +20,13 @@ defmodule PwaPhxWeb.Router do
 
     live "/", PageLive, :index
     live "/local", LocalLive.Index, :index
+
+    live "/persons", PeopleLive.Index, :index
+    live "/persons/new", PeopleLive.Index, :new
+    live "/persons/:id/edit", PeopleLive.Index, :edit
+
+    live "/persons/:id", PeopleLive.Show, :show
+    live "/persons/:id/show/edit", PeopleLive.Show, :edit
   end
 
   # Other scopes may use custom stacks.
